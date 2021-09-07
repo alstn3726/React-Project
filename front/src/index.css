@@ -1,0 +1,1877 @@
+@font-face {
+  font-family: 'SDSamliphopangche_Outline';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  background-color: #2b2e35;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  color: #413202;
+  font-family: 'SDSamliphopangche_Outline';
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-trigger {
+  background: #ffffff;
+  border-radius: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  vertical-align: middle;
+  transition: box-shadow 0.4s ease;
+  margin-left: auto; /* Strictly for positioning */
+}
+
+.menu-trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger span {
+  vertical-align: middle;
+  font-size: 20px;
+  margin: 0 10px;
+}
+/* 좌우반전 */
+.transform img{
+transform:rotate(0deg);
+
+-moz-transform: scaleX(-1); 
+
+-o-transform: scaleX(-1); 
+
+-webkit-transform: scaleX(-1); 
+
+transform: scaleX(-1);   
+
+}
+.menu-trigger img {
+  border-radius: 90px;
+}
+
+.menu {
+  background: #ffffff;
+  border-radius: 8px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  z-index: 1;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #dddddd;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  padding: 6px 10px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+/* 로그인///////////////////////////// */
+.header_right{
+  position: relative;
+  bottom: 55px;
+  width: 170px;
+}
+.menu-container{
+  border-bottom: 10px solid khaki;
+  padding-bottom: 10px;
+}
+.loginLink{
+  display: flex;
+}
+.loginLink li {
+  margin: 0 0 0 20px;
+}
+.loginLink li a {
+  font-size: 20px;
+  color: black;
+}
+.app{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 520px;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  }
+.loginform{
+  width: 250px; 
+  text-align:center;
+}
+.logininput{
+  width:100%;
+  height:90px;
+}
+.loginbutton_con{
+  width: 250px;
+}
+.loginbutton{
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: khaki;
+  border-color: khaki;
+  width: 100%;
+  height:40px;
+}
+.loginIcon{
+  color: rgba(0,0,0,.25);
+}
+
+/* 회원가입///////////////////////////// */
+.app{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 520px;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  }
+
+input.error {
+  border-color: red;
+}
+
+
+.input-feedback {
+  color: red;
+  height: 5px;
+  margin-top: -12px;
+}
+
+input #id{
+  position: relative;
+  left: -30px;
+}
+
+.signupbutton{
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: salmon;
+  color: white;
+  width: 100%;
+}
+.signupbutton:hover{
+  background-color: rgb(240, 85, 68);
+}
+button#id{
+  position: relative;
+  left: -30px;
+}
+/* 모바일 앱 우선으로 */
+#root{
+  margin: 0;
+}
+.AppMainPage{
+  border: 1px solid rgb(185, 185, 185);
+  border-style: none;
+  background-color: white;
+  /* box-shadow: rgba(50, 50, 50, 0.1); */
+  width: 300px;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.AppMainPage1{
+  background-color: khaki;
+  padding: 10px;
+ }
+
+.logo{ 
+  display: block;
+  margin:auto;
+  width: 250px; 
+  height: 130px;
+  text-align : center;
+}
+#myMap {
+  border-radius: 30px;
+  margin: 5px auto 5px auto;
+  width: 280px;
+  height: 300px;
+  z-index: 0;
+}
+
+.inputForm {
+  margin: auto;
+  width: 279px;
+}
+
+.SearchPlaceinput {
+  width: 212px;
+  padding: 16px 50px 13px 15px;
+}
+/* 책 댓글///////////////////////////// */
+.bookreply_form{
+  display: flex;
+  width: 300px;
+  
+}
+.bookreply_form textarea{
+  width: 242px;
+  border: 3px solid khaki;
+  border-left: none;
+  
+}
+.bookreply_form button{
+  font-size: 19px;
+  padding: 11px;
+  background-color: salmon;
+  border: 2px solid khaki;
+  color: white;
+  height: 100%;
+}
+.bookreply_content div{
+  margin-left: 15px;
+}
+/* 메인페이지 책자 이미지 */
+.bookMainImg{
+  width: 120px;
+  height: 110px;
+
+}
+.kakaomap{
+  height:470px;
+}
+@media (min-width: 360px) {
+  .bookreply_form{
+    display: flex;
+    width: 340px;
+    padding-top: 6rem;
+  }
+  .bookMainImg{
+    width: 120px;
+    height: 140px;
+  
+  }
+  .bookreply_form textarea{
+    width: 289px;
+    border: 3px solid khaki;
+    border-left: none;
+  }
+  .bookreply_form button{
+    font-size: 16px;
+    padding: 10px;
+    background-color: salmon;
+    border: 2px solid khaki;
+    color: white;
+  }
+  .inputForm {
+    margin: auto;
+    width: 279px;
+  }
+
+  .SearchPlaceinput {
+    width: 212px;
+    padding: 16px 50px 13px 15px;
+  }
+
+  #myMap {
+    border-radius: 30px;
+    margin: 5px auto 5px auto;
+    width: 335px;
+    height: 300px;
+  }
+
+  /* 로그인 폼 */
+  .header_right {
+    position: relative;
+    bottom: 67px;
+    padding-bottom: 10px;
+  }
+
+  .loginLink {
+    display: flex;
+    width: 200px;
+  }
+
+  .loginLink li {
+    margin: 0 0 0 20px;
+  }
+
+  .loginLink li a {
+    color: black;
+    font-size: 26px;
+  }
+
+  .app {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+    text-align: center;
+    width: 340px;
+    margin: 0 auto;
+  }
+
+  .loginform {
+    width: 300px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .loginform input {
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .loginform span {
+    font-size: 20px;
+  }
+
+  .loginbutton_con {
+    width: 300px;
+  }
+
+  .app h1 {
+    font-size: 30px;
+  }
+
+  .loginbutton {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: khaki;
+    border-color: khaki;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .loginIcon {
+    color: rgba(0, 0, 0, .25);
+  }
+  .input-feedback{
+    margin: 0 0 15px 0;
+  }
+
+  /* 전체 컨테이너 */
+  .AppMainPage {
+    border: 1px solid rgb(185, 185, 185);
+    border-style: none;
+    background-color: white;
+    /* box-shadow: rgba(50, 50, 50, 0.1); */
+    width: 340px;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+
+  .AppMainPage1 {
+    background-color: khaki;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 250px;
+    height: 120px;
+  }
+
+  .menu-trigger {
+    padding: 6px 8px;
+  }
+
+  .menu-trigger span {
+    font-size: 25px;
+    margin: 0 10px;
+  }
+
+  .menu li a {
+    padding: 7px 10px;
+    font-size: 23px;
+  }
+
+  .menu-container {
+    padding-bottom: 12px;
+  }
+
+  .menu {
+    top: 65px;
+  }
+}
+@media (min-width: 375px) {
+  .bookreply_form{
+    display: flex;
+    width: 355px;
+    padding-top: 6rem;
+  }
+  .bookMainImg{
+    width: 120px;
+    height: 140px;
+  
+  }
+  .bookreply_form textarea{
+    width: 289px;
+    border: 3px solid khaki;
+    border-left: none;
+  }
+  .bookreply_form button{
+    font-size: 25px;
+    padding: 10px;
+    background-color: salmon;
+    border: 2px solid khaki;
+    color: white;
+  }
+  .inputForm {
+    margin: auto;
+    width: 279px;
+  }
+
+  .SearchPlaceinput {
+    width: 212px;
+    padding: 16px 50px 13px 15px;
+  }
+
+  #myMap {
+    border-radius: 30px;
+    margin: 5px auto 5px auto;
+    width: 335px;
+    height: 300px;
+  }
+
+  /* 로그인 폼 */
+  .header_right {
+    position: relative;
+    bottom: 67px;
+    padding-bottom: 10px;
+  }
+
+  .loginLink {
+    display: flex;
+    width: 200px;
+  }
+
+  .loginLink li {
+    margin: 0 0 0 20px;
+  }
+
+  .loginLink li a {
+    color: black;
+    font-size: 26px;
+  }
+
+  .app {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+    text-align: center;
+    width: 355px;
+    margin: 0 auto;
+  }
+
+  .loginform {
+    width: 300px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .loginform input {
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .loginform span {
+    font-size: 20px;
+  }
+
+  .loginbutton_con {
+    width: 300px;
+  }
+
+  .app h1 {
+    font-size: 30px;
+  }
+
+  .loginbutton {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: khaki;
+    border-color: khaki;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .loginIcon {
+    color: rgba(0, 0, 0, .25);
+  }
+  .input-feedback{
+    margin: 0 0 15px 0;
+  }
+
+  /* 전체 컨테이너 */
+  .AppMainPage {
+    border: 1px solid rgb(185, 185, 185);
+    border-style: none;
+    background-color: white;
+    /* box-shadow: rgba(50, 50, 50, 0.1); */
+    width: 355px;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+
+  .AppMainPage1 {
+    background-color: khaki;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 250px;
+    height: 120px;
+  }
+
+  .menu-trigger {
+    padding: 6px 8px;
+  }
+
+  .menu-trigger span {
+    font-size: 25px;
+    margin: 0 10px;
+  }
+
+  .menu li a {
+    padding: 7px 10px;
+    font-size: 23px;
+  }
+
+  .menu-container {
+    padding-bottom: 12px;
+  }
+
+  .menu {
+    top: 65px;
+  }
+}
+
+@media (min-width: 414px ){
+  .SearchPlaceinput {
+    width: 212px;
+    padding: 16px 50px 13px 15px;
+  }
+  .bookMainImg{
+    width: 120px;
+    height: 150px;
+  
+  }
+/* 책 댓글///////////////////////////// */
+.bookreply_form{
+  display: flex;
+  width: 394px;
+  padding-top: 6rem;
+}
+.bookreply_form textarea{
+  width: 328px;
+  border: 3px solid khaki;
+  border-left: none;
+}
+.bookreply_form button{
+  font-size: 25px;
+  padding: 10px;
+  background-color: salmon;
+  border: 2px solid khaki;
+  color: white;
+}
+  /* 로그인 폼 */
+  .header_right{
+    position: relative;
+    bottom: 67px;
+    padding-bottom: 10px;
+  }
+  .loginLink{
+    display: flex;
+    width: 240px;
+  }
+  .loginLink li {
+    margin: 0 0 0 20px;
+  }
+  .loginLink li a {
+    color: black;
+    font-size: 28px;
+  }
+  .app{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 459px;
+    text-align: center;
+    width: 355px;
+    margin: 0 auto;
+    }
+    .loginform{
+      width: 300px;
+      margin-bottom: 100px;
+      text-align:center;
+    }
+    .loginform input {
+      height: 40px;
+      font-size: 20px;
+    }
+    .loginform span {
+      font-size: 20px;
+    }
+    /* .logininput{
+      width:100%;
+      height:150px;
+    } */
+    .loginbutton_con{
+      width:300px;
+    }
+    .app h1{
+      font-size: 30px;
+    }
+    .loginbutton{
+      border: 1px solid transparent;
+      border-radius: 4px;
+      background-color: khaki;
+      border-color: khaki;
+      width: 100%;
+      height:50px;
+      font-size: 20px;
+    }
+  .loginIcon{
+    color: rgba(0,0,0,.25);
+  }
+
+  .input-feedback{
+    margin: 0 0 15px 0;
+  }
+  /* 전체 컨테이너 */
+  .AppMainPage{
+    border: 1px solid rgb(185, 185, 185);
+    border-style: none;
+    background-color: white;
+    /* box-shadow: rgba(50, 50, 50, 0.1); */
+    width: 394px;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .AppMainPage1{
+    background-color: khaki;
+    padding: 10px;
+   }
+  .logo { width : 250px; height: 120px;}
+  .menu-trigger{
+  padding: 6px 8px;
+  }
+  .menu-trigger span {
+  font-size: 25px;
+  margin: 0 10px;
+  }
+  .menu li a {
+  padding: 8px 11px;
+  font-size: 23px;
+  }
+  .menu {
+  top: 65px;
+  }
+  }
+
+@media (min-width: 425px) {
+  .bookMainImg{
+    width: 120px;
+    height: 130px;
+  
+  }
+/* 책 댓글///////////////////////////// */
+.bookreply_form{
+  display: flex;
+  width: 405px;
+  padding-top: 6rem;
+}
+.bookreply_form textarea{
+  width: 320px;
+  border: 3px solid khaki;
+  border-left: none;
+}
+.bookreply_form button{
+  font-size: 25px;
+  padding: 10px 19px;
+  background-color: salmon;
+  border: 2px solid khaki;
+  color: white;
+}
+  #myMap {
+    border-radius: 30px;
+    margin: 5px auto 5px auto;
+    width: 385px;
+    height: 482px;
+  }
+ /* 로그인 폼 */
+ .header_right{
+  position: relative;
+  bottom: 68px;
+  padding-bottom: 10px;
+}
+.loginLink{
+  display: flex;
+  width: 240px;
+}
+.loginLink li {
+  margin: 0 0 0 20px;
+}
+.loginLink li a {
+  color: black;
+  font-size: 30px;
+}
+.app{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 592px;
+  text-align: center;
+  width: 355px;
+  margin: 0 auto;
+  }
+  .loginform{
+    width: 300px;
+    margin-bottom: 100px;
+    text-align:center;
+  }
+  .loginform input {
+    height: 40px;
+    font-size: 20px;
+  }
+  .loginform span {
+    font-size: 20px;
+  }
+  /* .logininput{
+    width:100%;
+    height:150px;
+  } */
+  .loginbutton_con{
+    width:300px;
+  }
+  .app h1{
+    font-size: 30px;
+  }
+  .loginbutton{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: khaki;
+    border-color: khaki;
+    width: 100%;
+    height:50px;
+    font-size: 20px;
+  }
+.loginIcon{
+  color: rgba(0,0,0,.25);
+}
+/* 전체 컨테이너 */
+.AppMainPage{
+  border: 1px solid rgb(185, 185, 185);
+  border-style: none;
+  background-color: white;
+  /* box-shadow: rgba(50, 50, 50, 0.1); */
+  width: 408px;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.AppMainPage1{
+  background-color: khaki;
+  padding: 10px;
+ }
+.logo { width : 250px; height: 120px;}
+.menu-trigger{
+padding: 6px 8px;
+}
+.menu-trigger span {
+font-size: 25px;
+margin: 0 10px;
+}
+.menu li a {
+padding: 8px 11px;
+font-size: 23px;
+}
+.menu {
+top: 67px;
+}
+}
+
+@media (min-width: 768px) {
+
+  .kakaomap{
+    height:970px;
+  }
+  .bookMainImg{
+    width: 220px;
+    height: 230px;
+  
+  }
+/* 책 댓글///////////////////////////// */
+.bookreply_form{
+  display: flex;
+  width: 748px;
+  padding-top: 6rem;
+}
+.bookreply_form textarea{
+  font-size: 30px;
+  width: 601px;
+  border: 3px solid khaki;
+  border-left: none;
+}
+.bookreply_form button{
+  font-size: 40px;
+  padding: 20px 38px;
+  background-color: salmon;
+  border: 2px solid khaki;
+  color: white;
+}
+.bookreply_content div{
+  font-size: 30px;
+}
+  #myMap {
+    border-radius: 30px;
+    margin: 5px auto 5px auto;
+    width: 728px;
+    height: 735px;
+  }
+/* 로그인 폼 */
+.header_right{
+  position: relative;
+  bottom: 110px;
+  padding-bottom: 10px;
+}
+.loginLink{
+  display: flex;
+  width: 300px;
+}
+.loginLink li {
+  margin: 0 0 0 20px;
+}
+.loginLink li a {
+  color: black;
+  font-size: 55px;
+}
+.app{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 520px;
+  text-align: center;
+  width: 355px;
+  margin: 0 auto;
+  }
+  .app2 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 685px;
+    text-align: center;
+
+  }
+  .app2 span {
+    font-size: 30px;
+  }
+  .app2 h2{
+    font-size: 40px;
+  }
+  .app2 form {
+    width: 100%;
+  }
+  /* .app2 form div label{
+    top: 30px;
+    right: 60px;
+  } */
+  .app2 form div{
+    width: 100%;
+    text-align: left;
+  }
+  .app2 form div div{
+    margin: 0;
+  }
+
+.loginform{
+  width: 500px;
+  margin-bottom: 100px;
+  text-align:center;
+}
+.loginform input {
+  height: 100px;
+  font-size: 30px;
+}
+.loginform span {
+  font-size: 30px;
+}
+/* .logininput{
+  width:100%;
+  height:150px;
+} */
+.loginbutton_con{
+  width:500px;
+}
+.app h1{
+  font-size: 60px;
+}
+.loginbutton{
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: khaki;
+  border-color: khaki;
+  width: 100%;
+  height:100px;
+  font-size: 50px;
+}
+.loginIcon{
+  color: rgba(0,0,0,.25);
+}
+/* 전체 컨테이너 */
+.AppMainPage{
+  border: 1px solid rgb(185, 185, 185);
+  border-style: none;
+  background-color: white;
+  /* box-shadow: rgba(50, 50, 50, 0.1); */
+  width: 748px;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.AppMainPage1{
+  background-color: khaki;
+  padding: 10px;
+ }
+.logo { width : 500px; height: 250px;}
+.menu-trigger{
+padding: 8px 20px;
+}
+/* .menu-container{
+  top: 5px;
+} */
+.menu-trigger span {
+font-size: 60px;
+margin: 0 10px;
+}
+.menu li a {
+padding: 12px 22px;
+font-size: 50px;
+}
+.menu {
+top: 125px;
+}
+}
+
+@media (min-width: 1024px) {
+  .kakaomap{
+    height:1070px;
+  }
+  .bookMainImg{
+    width: 340px;
+    height: 325px;
+  
+  }
+/* 책 댓글///////////////////////////// */
+.bookreply_form{
+  display: flex;
+  width: 1004px;
+  
+}
+.bookreply_form textarea{
+  font-size: 30px;
+  width: 799px;
+  border: 3px solid khaki;
+  border-left: none;
+}
+.bookreply_form button{
+  font-size: 40px;
+  padding: 20px 67px;
+  background-color: salmon;
+  border: 2px solid khaki;
+  color: white;
+}
+.bookreply_content div{
+  font-size: 30px;
+}
+  #myMap {
+    border-radius: 30px;
+    margin: 5px auto 5px auto;
+    width: 884px;
+    height: 735px;
+  }
+/* 로그인 폼 */
+.header_right{
+  position: relative;
+  bottom: 125px;
+  padding-bottom: 10px;
+}
+.loginLink{
+  display: flex;
+  width: 500px;
+}
+.loginLink li {
+  margin: 0 0 0 20px;
+}
+.loginLink li a {
+  color: black;
+  font-size: 70px;
+}
+.app{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1047px;
+  text-align: center;
+  width: 1004px;
+  margin: 0 auto;
+  }
+  .app2 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 685px;
+    text-align: center;
+
+  }
+  .app2 span {
+    font-size: 30px;
+  }
+  .app2 h2{
+    font-size: 40px;
+  }
+  .app2 form {
+    width: 100%;
+  }
+  /* .app2 form div label{
+    top: 30px;
+    right: 60px;
+  } */
+  .app2 form div{
+    width: 100%;
+    text-align: left;
+  }
+  .app2 form div div{
+    margin: 0;
+  }
+
+.loginform{
+  width: 500px;
+  margin-bottom: 100px;
+  text-align:center;
+}
+.loginform input {
+  height: 100px;
+  font-size: 30px;
+}
+.loginform span {
+  font-size: 30px;
+}
+/* .logininput{
+  width:100%;
+  height:150px;
+} */
+.loginbutton_con{
+  width:500px;
+}
+.app h1{
+  font-size: 60px;
+}
+.loginbutton{
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: khaki;
+  border-color: khaki;
+  width: 100%;
+  height:100px;
+  font-size: 50px;
+}
+.loginIcon{
+  color: rgba(0,0,0,.25);
+}
+/* 전체 컨테이너 */
+.AppMainPage{
+  border: 1px solid rgb(185, 185, 185);
+  border-style: none;
+  background-color: white;
+  /* box-shadow: rgba(50, 50, 50, 0.1); */
+  width: 1004px;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.AppMainPage1{
+  background-color: khaki;
+  padding: 10px;
+ }
+.logo { width : 500px; height: 250px;}
+.menu-trigger{
+padding: 8px 20px;
+}
+/* .menu-container{
+  top: 5px;
+} */
+.menu-trigger span {
+font-size: 60px;
+margin: 0 10px;
+}
+.menu li a {
+padding: 12px 22px;
+font-size: 50px;
+}
+.menu {
+top: 125px;
+}
+}
+
+@media (min-width: 1440px) {
+  .bookMainImg{
+    width: 400px;
+    height: 370px;
+  
+  }
+  .bookreply_form{
+    display: flex;
+    width: 1420px;
+    
+  }
+  .bookreply_form textarea{
+    font-size: 40px;
+    width: 1101px;
+    border: 3px solid khaki;
+    border-left: none;
+  }
+  .bookreply_form button{
+    font-size: 50px;
+    padding: 30px 115px;
+    background-color: salmon;
+    border: 2px solid khaki;
+    color: white;
+  }
+  .bookreply_content div{
+    font-size: 40px;
+  }
+  .AppMainPage{
+    border: 1px solid rgb(185, 185, 185);
+    background-color: white;
+    /* box-shadow: rgba(50, 50, 50, 0.1); */
+    width: 1420px;
+    /* height: 862px; */
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .AppMainPage1{
+    background-color: khaki;
+    padding: 10px;
+   }
+.logo { 
+  width : 500px; 
+  height: 180px;
+  margin-top: 40px;
+}
+.menu-trigger{
+  padding: 12px 14px;
+  }
+.menu-trigger span {
+  font-size: 30px;
+  margin: 0 20px;
+  }
+  .menu li a {
+    padding: 15px 28px;
+    font-size: 26px;
+    }
+  .menu {
+    top: 90px;
+    }
+}
+
+/*            필규                                    */
+@media (min-width: 320px) {
+
+  /* FreeBoardList */
+  div .ListDivStyled {
+    width: 300px;
+  }
+
+  div .ListDivStyled .ListItemDivStyled {
+    width: 280px;
+    margin: 5px;
+  }
+
+  /* FreeBoardWritePage */
+  .FreeBoardWriteOutDiv {
+    width: 300px;
+    height: 393px;
+    margin: auto;
+  }
+
+  div .FreewriteDiv {
+    width: 280px;
+    height: 329px;
+  }
+
+  form .TitleIput {
+    font-size: 30px;
+  }
+
+  form .WriteButtonDiv {
+    margin-top: 70px;
+    width: 279px;
+    height: 40px;
+  }
+
+  /* FreeBoardDetailPage */
+  div .FreeBoardDetailDiv {
+    margin: auto;
+    width: 300px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv {
+    width: 290px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table {
+    width: 280px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table tr th {
+    width: 70px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table tr td {
+    width: 80px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table tr td .writeContent div img {
+    max-width: 150px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv .FreeBoardDetailButtonDiv {
+    width: 280px;
+    margin: 13px 0 13px 0;
+    text-align: center;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv .FreeBoardDetailButtonDiv div {
+    width: 80px;
+    margin: 0;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv .FreeBoardDetailButtonDiv div button {
+    width: 70px;
+    margin: 0;
+  }
+
+  div .ReplyContentStyled {
+    width: 300px;
+  }
+
+  div .ReplyContentStyled form {
+    margin:0 auto;
+    width: 285px;
+  }
+
+  div .ReplyContentStyled form input {
+    width: 200px;
+  }
+
+  div .ReplyContentStyled form div button {
+    margin: 0 0 0 0;
+    font-size: 10px;
+    width: 70px;
+  }
+  
+  div .ReplyListStyled div {
+    margin:0 auto;
+    width: 280px;
+  }
+
+  div .ReplyListStyled div .reUserid {
+    width: 80px;
+  }
+
+  div .ReplyListStyled div .reContent {
+    word-break: break-all;
+    width: 80px;
+  }
+
+  div .ReplyListStyled div .reDate {
+    width: 80px;
+  }
+  div .ReplyListStyled div .ReplyItem{
+    width:200px;
+  }
+/* UpdatePageDiv */
+  /* FreeBoardUpdatePage */
+  div .UpdatePageDiv {
+    width: 290px;
+    height: 400px;
+  }
+  div .UpdatePageDiv .sc-ezbkgU{
+    height: 400px;
+  }
+  .FreeBoardUpdateForm .sc-iqsfdx{
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .FreeBoardUpdateForm .ql-container{
+    height: 150px;
+
+  }
+  .FreeBoardUpdateForm .ql-editor{
+    height: 150px;
+
+  }
+  form .updateButton {
+    width: 320px;
+  }
+
+  form .UpdateTitleInput {
+    font-size: 30px;
+  }
+
+  div .UpdatePageDiv .updateButton {
+    width: 290px;
+    height: 50px;
+  }
+
+  /* AddBoardList */
+  div .AddBoardList {
+    margin: auto;
+    width: 280px;
+  }
+
+  div .AddBoardList .AddBoardListItem {
+    margin: 5px 0 5px 0;
+    width: 280px;
+  }
+
+  div .AddBoardList .AddBoardListItem .aNo {
+    width: 100px;
+  }
+  div .UpdatePageDiv {
+    width: 300px;
+    height: 500px;
+  }
+
+  div .UpdatePageDiv form .cXitSH .ql-editor {
+    width: 280px;
+  }
+  div .UpdatePageDiv .cXitSH{
+    width: 280px;
+    height: 300px;
+  }
+  div .AddBoardDivStyle{
+    height: 510px;
+  }
+}
+@media (min-width: 1440px) {
+  div .AddBoardDivStyle{
+    height: 800px;
+  }
+  .kakaomap{
+    height:1370px;
+  }
+}
+@media (min-width: 375px) {
+  div .ListDivStyled {
+    width: 300px;
+    height: auto;
+  }
+
+  div .ListDivStyled .ListItemDivStyled {
+    width: 280px;
+    margin: 5px;
+    height: auto;
+  }
+
+  /* FreeBoardDetailPage */
+  div .FreeBoardDetailDiv {
+    margin: auto;
+    width: 355px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv {
+    width: 345px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table {
+    width: 335px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table tr th {
+    width: 80px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table tr td {
+    width: 90px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv .FreeBoardDetailButtonDiv {
+    width: 340px;
+    margin: 13px 0 13px 0;
+    text-align: center;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv .FreeBoardDetailButtonDiv div {
+    width: 90px;
+    margin: 0;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv .FreeBoardDetailButtonDiv div button {
+    width: 80px;
+    margin: 0;
+  }
+
+  div .ReplyContentStyled {
+    width: 340px;
+  }
+
+  div .ReplyContentStyled form {
+    width: 340px;
+  }
+
+  div .ReplyContentStyled form input {
+    width: 255px;
+  }
+
+  div .ReplyContentStyled form div button {
+    margin: 0 0 0 0;
+    font-size: 10px;
+    width: 70px;
+  }
+
+  div .ReplyListStyled div {
+    width: 330px;
+  }
+
+  div .ReplyListStyled div .reUserid {
+    width: 80px;
+  }
+
+  div .ReplyListStyled div .reContent {
+    word-break: break-all;
+    width: 140px;
+  }
+
+  div .ReplyListStyled div .reDate {
+    width: 80px;
+  }
+
+  /* AddBoardList */
+  div .AddBoardList .AddBoardListItem {
+    width: 280px;
+  }
+
+  div .AddBoardList .AddBoardListItem .ndu .aNo {
+    width: 130px;
+  }
+
+  div .AddBoardList .AddBoardListItem .ndu .du {
+    width: 140px;
+  }
+  /* AddBoardWirte */
+  div .AddBoardDivStyle{
+    height: 510px;
+  }
+  div .AddBoardDivStyle input{
+    width: 180px;
+  }
+  div .AddBoardDivStyle input,button{
+    height: 50px;
+  }
+  div .AddBoardDivStyle button{
+    width: 50px;
+  }
+  div .UpdatePageDiv {
+    width: 300px;
+    height: 500px;
+  }
+
+  div .UpdatePageDiv form .cXitSH .ql-editor {
+    width: 280px;
+  }
+  div .UpdatePageDiv .cXitSH{
+    width: 280px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 425px) {
+
+  div .ListDivStyled{
+    width: 350px;
+  }
+
+  div .ListDivStyled .ListItemDivStyled{
+    width: 300px;
+    height: 200px;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+
+  div .ifuiaO{
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    padding-top: 30px;
+  } 
+
+  /* FreeBoardDetailPage */
+  div .FreeBoardDetailDiv {
+    margin: auto;
+    width: 400px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv {
+    width: 390px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table {
+    width: 380px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table tr th {
+    width: 100px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table tr td {
+    width: 110px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv .FreeBoardDetailButtonDiv {
+    width: 380px;
+    margin: 13px 0 13px 0;
+    text-align: center;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv .FreeBoardDetailButtonDiv div {
+    width: 110px;
+    margin: 0;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv .FreeBoardDetailButtonDiv div button {
+    width: 100px;
+    margin: 0;
+  }
+
+  div .ReplyContentStyled {
+    width: 390px;
+  }
+
+  div .ReplyContentStyled form {
+    width: 390px;
+  }
+
+  div .ReplyContentStyled form input {
+    width: 300px;
+  }
+
+  div .ReplyContentStyled form div button {
+    margin: 0 0 0 0;
+    font-size: 10px;
+    width: 70px;
+  }
+
+  div .ReplyListStyled div {
+    width: 370px;
+  }
+
+  div .ReplyListStyled div .reUserid {
+    width: 80px;
+  }
+
+  div .ReplyListStyled div .reContent {
+    word-break: break-all;
+    width: 180px;
+  }
+
+  div .ReplyListStyled div .reDate {
+    width: 80px;
+  }
+
+  /* AddBoardList */
+  div .AddBoardList .AddBoardListItem {
+    width: 280px;
+  }
+
+  div .AddBoardList .AddBoardListItem .ndu .aNo {
+    width: 130px;
+  }
+
+  div .AddBoardList .AddBoardListItem .ndu .du {
+    width: 140px;
+  }
+  /* AddBoardWirte */
+  div .AddBoardDivStyle{
+    height: 790px;
+  }
+  div .AddBoardDivStyle input{
+    width: 180px;
+  }
+  div .AddBoardDivStyle input,button{
+    height: 50px;
+  }
+  div .AddBoardDivStyle button{
+    width: 50px;
+  }
+  div .UpdatePageDiv {
+    width: 300px;
+    height: 500px;
+  }
+
+  div .UpdatePageDiv form .cXitSH .ql-editor {
+    width: 280px;
+  }
+  div .UpdatePageDiv .cXitSH{
+    width: 280px;
+    height: 300px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  div .ifuiaO{
+    width: 500px;
+  }
+  div .ListDivStyled{
+    width: 450px;
+  }
+
+  div .ListDivStyled .ListItemDivStyled{
+    width: 400px;
+    height: 200px;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+
+  div .ifuiaO{
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    padding-top: 30px;
+  }
+
+  div .FreeBoardWriteOutDiv{
+    width: 600px;
+    height: 550px;
+  }
+  div .FreeBoardWriteOutDiv .FreewriteDiv{
+    width: 500px;
+  }
+  form .WriteButtonDiv {
+    margin-top: 70px;
+    width: 500px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  div .UpdatePageDiv {
+    width: 600px;
+    height: 500px;
+  }
+
+  div .UpdatePageDiv form .cXitSH .ql-editor {
+    width: 600px;
+  }
+  div .UpdatePageDiv .cXitSH{
+    width: 600px;
+    height: 200px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  div .ListDivStyled{
+    width: 800px;
+  }
+  div .ifuiaO{
+    width: 300px;
+    height: 150px;
+    font-size: 50px;
+    padding-top: 40px;
+  }
+  
+  div .ListDivStyled .ListItemDivStyled{
+    width: 500px;
+    height: 230px;
+    font-size: 35px;
+    padding-top: 30px;
+  }
+
+  div .FreeBoardDetailDiv {
+    margin: 0 auto 0 auto;
+    width: 1000px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv {
+    margin: 0 auto 0 auto;
+    width: 800px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table {
+    margin: 0 auto 0 auto;
+    width: 600px;
+    font-size: 25px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table tr th {
+    width: 100px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv table tr td {
+    width: 110px;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv .FreeBoardDetailButtonDiv {
+    width: 400px;
+    margin: 13px auto 13px auto;
+    text-align: center;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv .FreeBoardDetailButtonDiv div {
+    width: 110px;
+    margin: 0;
+  }
+
+  div .FreeBoardDetailDiv .FreeBoardDetailTableDiv .FreeBoardDetailButtonDiv div button {
+    width: 100px;
+    margin: 0;
+  }
+
+  div .ReplyContentStyled {
+    width: 800px;
+  }
+
+  div .ReplyContentStyled form {
+    margin: 0 auto 0 auto;
+    width: 600px;
+    text-align: center;
+  }
+
+  div .ReplyContentStyled form input {
+    width: 300px;
+  }
+
+  div .ReplyContentStyled form div button {
+    margin: 0 0 0 0;
+    font-size: 20px;
+    width: 100px;
+  }
+
+  div .ReplyListStyled div {
+    font-size: 20px;
+    width: 400px;
+  }
+
+  div .ReplyListStyled div .reUserid {
+    width: 80px;
+  }
+
+  div .ReplyListStyled div .reContent {
+    word-break: break-all;
+    width: 180px;
+  }
+
+  div .ReplyListStyled div .reDate {
+    width: 80px;
+  }
+
+  /*write*/
+  div .FreeBoardWriteOutDiv{
+    width: 800px;
+    height: 550px;
+  }
+  div .FreeBoardWriteOutDiv .FreewriteDiv{
+    width: 700px;
+  }
+  form .WriteButtonDiv {
+    margin-top: 70px;
+    width: 700px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  /*update*/
+  div .UpdatePageDiv {
+    width: 600px;
+    height: 400px;
+  }
+
+  div .UpdatePageDiv form .cXitSH .ql-editor {
+    width: 600px;
+  }
+  div .UpdatePageDiv .cXitSH{
+    width: 600px;
+    height: 200px;
+  }
+
+  /* AddBoardList */
+  div .AddBoardList .AddBoardListItem {
+    width: 280px;
+  }
+
+  div .AddBoardList .AddBoardListItem .ndu .aNo {
+    width: 130px;
+  }
+
+  div .AddBoardList .AddBoardListItem .ndu .du {
+    width: 140px;
+  }
+  /* AddBoardWirte */
+  div .AddBoardDivStyle{
+    height: 590px;
+  }
+  div .AddBoardDivStyle input{
+    width: 180px;
+  }
+  div .AddBoardDivStyle input,button{
+    height: 50px;
+  }
+  div .AddBoardDivStyle button{
+    width: 50px;
+  }
+}
